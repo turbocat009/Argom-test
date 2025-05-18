@@ -1,3 +1,7 @@
+---
+import Header from "../components/header.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +9,26 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Argom Seals S.L.</title>
+		<script is:inline src="/js/openMenu.js"></script>
 	</head>
 	<body>
+		<header>
+			<Header />
+		</header>
 		<slot />
 	</body>
 </html>
 
-<style>
+<style is:global>
 	html,
 	body {
 		margin: 0;
 		width: 100%;
 		height: 100%;
+	}
+
+	.none{
+		display: none;
 	}
 </style>
