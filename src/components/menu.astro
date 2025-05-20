@@ -30,26 +30,4 @@
     .divClose {
         animation: backDisappear 0.5s ease-in-out;
     }
-
-    @keyframes backAppear {
-        0% {
-            backdrop-filter: blur(00px);
-            background-color: rgba(153, 153, 153, 0.03);
-        }
-        100% {
-            backdrop-filter: blur(100px);
-            background-color: rgba(153, 153, 153, 0.3);
-        }
-    }
-
-    @keyframes backDisappear {
-        0% {
-            backdrop-filter: blur(100px);
-            background-color: rgba(153, 153, 153, 0.3);
-        }
-        100% {
-            backdrop-filter: blur(00px);
-            background-color: rgba(153, 153, 153, 0.03);
-        }
-    }
 </style>

@@ -1,0 +1,86 @@
+/*Header*/
+
+@keyframes moveButton {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes changeLogo1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes changeLogo2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+/*Menu*/
+
+@keyframes backAppear {
+    0% {
+        backdrop-filter: blur(00px);
+        background-color: rgba(153, 153, 153, 0.03);
+    }
+
+    100% {
+        backdrop-filter: blur(100px);
+        background-color: rgba(153, 153, 153, 0.3);
+    }
+}
+
+@keyframes backDisappear {
+    0% {
+        backdrop-filter: blur(100px);
+        background-color: rgba(153, 153, 153, 0.3);
+    }
+
+    100% {
+        backdrop-filter: blur(00px);
+        background-color: rgba(153, 153, 153, 0.03);
+    }
+}
+
+@keyframes logo-to-black{
+    0%{
+        fill: rgba(255, 255, 255, 0.89);
+    }
+    100%{
+        fill: rgba(19, 19, 19, 0.807);
+    }
+
+}
+
+@keyframes logo-to-white{
+    0%{
+        fill: rgba(19, 19, 19, 0.807);
+    }
+    100%{
+        fill: rgba(255, 255, 255, 0.89);
+    }
+}
