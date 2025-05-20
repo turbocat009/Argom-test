@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const menu = document.getElementById("contextMenu");
     const btn1 = document.getElementById("btn1");
     const btn2 = document.getElementById("btn2");
-    const btn3 = document.getElementById("btn3");
+    const svg = document.querySelector("svg");
 
 
     let menuOpen = false;
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             btn3.classList.remove("btn3X");
             menuButton.classList.add("moveBtn2")
             menuButton.classList.remove("moveBtn")
+            svg.classList.remove("svg-white")
 
 
             setTimeout(function () {
@@ -36,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
             btn3.classList.remove("btn3-");
             menuButton.classList.add("moveBtn")
             menuButton.classList.remove("moveBtn2")
+            svg.classList.add("svg-white")
+
 
             setTimeout(function () {
                 menu.classList.remove("divOpen");
