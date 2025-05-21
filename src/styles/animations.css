@@ -40,6 +40,18 @@
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+
 /*Menu*/
 
 @keyframes backAppear {
@@ -50,14 +62,14 @@
 
     100% {
         backdrop-filter: blur(100px);
-        background-color: rgba(153, 153, 153, 0.3);
+        background-color: rgba(49, 41, 41, 0.36);
     }
 }
 
 @keyframes backDisappear {
     0% {
         backdrop-filter: blur(100px);
-        background-color: rgba(153, 153, 153, 0.3);
+        background-color: rgba(49, 41, 41, 0.36);
     }
 
     100% {
@@ -66,21 +78,42 @@
     }
 }
 
-@keyframes logo-to-black{
-    0%{
-        fill: rgba(255, 255, 255, 0.89);
-    }
-    100%{
-        fill: rgba(19, 19, 19, 0.807);
+@keyframes menuAppear {
+    0% {
+        transform: translateX(100%);
     }
 
+    100% {
+        transform: translateX(0);
+    }
 }
 
-@keyframes logo-to-white{
-    0%{
-        fill: rgba(19, 19, 19, 0.807);
+@keyframes menuDisappear {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+@keyframes innerLogo1{
+    0%,50%{
+        opacity: 0;
     }
     100%{
-        fill: rgba(255, 255, 255, 0.89);
+        opacity: 1;
+    }
+}
+
+@keyframes innerLogo2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const menu = document.getElementById("contextMenu");
     const btn1 = document.getElementById("btn1");
     const btn2 = document.getElementById("btn2");
-    const svg = document.querySelector("svg");
+    const btn3 = document.getElementById("btn3");
+
+    const svg = document.getElementById("svgLogo");
+    const innerMenu = document.getElementById("menu");
+
 
 
     let menuOpen = false;
@@ -18,12 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
             btn3.classList.remove("btn3X");
             menuButton.classList.add("moveBtn2")
             menuButton.classList.remove("moveBtn")
-            svg.classList.remove("svg-white")
-
-
+            innerMenu.classList.add("asideClose")
+            svg.classList.add("svg-disappear");
             setTimeout(function () {
                 menu.classList.remove("divClose");
+                innerMenu.classList.remove("asideClose")
                 menu.classList.add("none");
+                svg.classList.remove("svg-disappear");
             }, 500);
             menuOpen = false;
         } else{
@@ -37,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
             btn3.classList.remove("btn3-");
             menuButton.classList.add("moveBtn")
             menuButton.classList.remove("moveBtn2")
-            svg.classList.add("svg-white")
 
 
             setTimeout(function () {
